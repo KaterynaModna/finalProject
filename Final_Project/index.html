@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../04/css/reset.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Travely</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="navi_wrapper">
+                <div id="toggle">
+                    <button class="indicator"></button>
+                </div>
+                <a href="#">
+                    <svg class="logo">
+                        <use xlink:href="./assets/sprite.svg#logo" />
+                    </svg>
+                </a>
+                <div class="icon_wrapper">
+                    <a href="#">
+                        <svg class="youtube">
+                            <use xlink:href="./assets/sprite.svg#youtube" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="./assets/sprite.svg#inst" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="./assets/sprite.svg#tg" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <h1>
+                Choose Your
+                <span class="kursiv"> Extraordinary Dream</span>
+                Journey
+            </h1>
+            <p class="main_p">Discover the World with Trave.ly</p>
+            <div class="complex_input">
+
+                <div class="input_elements">
+                    <div class="select_item">
+                        <i class="fa-regular fa-calendar"></i>
+                        <select class="select_item" name="date" id="date" required>
+                            <option value="" selected disabled>date</option>
+                        </select>
+                    </div>
+                    <div class="select_item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <select class="select_item" name="lokal" id="lokal" required>
+                            <option value="" selected disabled>location</option>
+                        </select>
+                    </div>
+                    <div class="select_item">
+                        <i class="fa-regular fa-user"></i>
+                        <select class="select_item" name="person" id="person" required>
+                            <option value="" selected disabled>person</option>
+                        </select>
+                    </div>
+                    <button class="search" type="button">search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- <section class="grid_section">
+            <div class="section_main_text_wrapper">
+                <h3 class="section_name">Explore Destinations</h3>
+                <span class="section_little_text">
+                    Find inspiration for your next adventure. See our diverse selection
+                    of destinations, from idyllic beaches to vibrant cityscapes.
+                </span>
+            </div>
+            <div class="grid">
+                <div class="grid-item wide1">
+                    <img src="./img/for_grid_1.webp">
+                </div>
+                <div class="grid-item wide2">
+                    <img src="./img/for_grid_2.webp">
+                </div>
+                <div class="grid-item wide3">
+                    <img src="./img/for_grid_3.webp">
+                </div>
+                <div class="grid-item wide4">
+                    <img src="./img/for_grid_4.webp">
+                </div>
+                <div class="grid-item wide5">
+                    <img src="./img/for_grid_5.webp">
+                </div>
+            </div>
+        </section> -->
+        <section class="reasons">
+            <div class="grid_table">
+                <div class="grid_table_item one">
+                    <div class="table_text_wrapper">
+                        <h4 class="table_main_text">
+                            20 <span class="kursiv kurs_reasons">years</span>
+                        </h4>
+                        <p class="table_mini_text">We have honed our expertise
+                            to provide you with exceptional travel experiences.</p>
+                    </div>
+                </div>
+                <div class="grid_table_item two">
+                    <div class="table_main_text_wrapper">
+                        <h4 class="table_main_text first">
+                            Reasons to <span class="kursiv main_kurs">Entrust</span>
+                        </h4>
+                        <h4 class="table_main_text second">
+                            Your Journey to Us
+                        </h4>
+                    </div>
+                </div>
+                <div class="grid_table_item three">
+                    <div class="table_text_wrapper">
+                        <h4 class="table_main_text">
+                            98 <span class="kursiv kurs_reasons">%</span>
+                        </h4>
+                        <p class="table_mini_text">Satisfaction rate from customers about our outstanding and memorable
+                            journeys.</p>
+                    </div>
+                </div>
+                <div class="grid_table_item four">
+                    <div class="table_text_wrapper">
+                        <h4 class="table_main_text">
+                            50 <span class="kursiv kurs_reasons">countries</span>
+                        </h4>
+                        <p class="table_mini_text">In which we operate, ensuring that you have access to a wide range of
+                            destinations and experiences worldwide.</p>
+                    </div>
+                </div>
+                <div class="grid_table_item five">
+                    <div class="table_text_wrapper">
+                        <h4 class="table_main_text">
+                            24/7 <span class="kursiv kurs_reasons">support</span>
+                        </h4>
+                        <p class="table_mini_text">We provide round-the-clock customer support, ensuring that assistance
+                            is just a call away.</p>
+                    </div>
+                </div>
+                <div class="grid_table_item six">
+                    <div class="table_text_wrapper">
+                        <h4 class="table_main_text">
+                            7 <span class="kursiv kurs_reasons">categories</span>
+                        </h4>
+                        <p class="table_mini_text">We offer tours, ensuring there's something for every type of
+                            traveler, from cultural enthusiasts to adventure seekers.</p>
+                    </div>
+                </div>
+                <div class="grid_table_item seven">
+                    <a href="#">
+                        <h5 class="table_booking">Book tour</h5>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+                <div class="section_main_text_wrapper">
+                    <h3 class="section_name">FAQ</h3>
+                    <span class="section_little_text">Find quick answers to common travel-related questions. Explore our FAQs to get the information
+                        you need for a seamless travel experience.</span>
+                </div>
+                <div class="questions">
+                    <p class="question">How can I contact your customer support during my trip?
+                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
+                </p>
+                    <p class="question">Are your tours suitable for 
+                        solo travelers?
+                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
+                </p>
+                    <p class="question">What is your cancellation policy?
+                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
+                </p>
+                    <p class="question">Do you offer travel insurance options?
+                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
+                </p>
+                    <p class="question">Can I customize my travel itinerary 
+                        to suit my preferences?
+                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
+                </p>
+                </div>
+        </section>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/6413ad4d2f.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
