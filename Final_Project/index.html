@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Travely</title>
 </head>
@@ -85,22 +87,22 @@
                 </span>
             </div>
             <div class="grid">
-                <div class="g1 box">
+                <div style="background-color: red;" class="g1 box">
                     <img class="grid_img" src="./img/for_grid_1.webp">
                 </div>
-                <div class= "g2 box">
+                <div style="background-color: green;" class="g2 box">
                     <img class="grid_img" src="./img/for_grid_2.webp">
                 </div>
-                <div class="g3 box">
+                <div style="background-color: yellow;" class="g3 box">
                     <img class="grid_img" src="./img/for_grid_3.webp">
                 </div>
-                <div class="g4 box">
+                <div style="background-color: aqua;" class="g4 box">
                     <img class="grid_img" src="./img/for_grid_4.webp">
                 </div>
-                <div class="g5 box">
+                <div style="background-color: purple;" class="g5 box">
                     <img class="grid_img" src="./img/for_grid_5.webp">
                 </div>
-        </div>
+            </div>
         </section>
         <section class="reasons">
             <div class="grid_table">
@@ -167,34 +169,185 @@
             </div>
         </section>
         <section class="faq">
-                <div class="section_main_text_wrapper">
-                    <h3 class="section_name">FAQ</h3>
-                    <span class="section_little_text">Find quick answers to common travel-related questions. Explore our FAQs to get the information
-                        you need for a seamless travel experience.</span>
+            <div class="section_main_text_wrapper">
+                <h3 class="section_name">FAQ</h3>
+                <span class="section_little_text">Find quick answers to common travel-related questions. Explore our
+                    FAQs to get the information
+                    you need for a seamless travel experience.</span>
+            </div>
+            <div class="questions">
+                <p class="question">How can I contact your customer support during my trip?
+                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
+                </p>
+                <p class="question">Are your tours suitable for
+                    solo travelers?
+                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
+                </p>
+                <p class="question">What is your cancellation policy?
+                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
+                </p>
+                <p class="question">Do you offer travel insurance options?
+                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
+                </p>
+                <p class="question">Can I customize my travel itinerary
+                    to suit my preferences?
+                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
+                </p>
+            </div>
+        </section>
+        <section class="card_section">
+            <div class="container">
+            <div class="cards">
+                <div class="one_card">
+                    <div class="card_header_wrapper">
+                        <img class="user_photo" src="./img/girl_photo.webp">
+                        <div class="card_head_text_wrapper">
+                            <h6 class="comment_header">“Best decision I made”</h6>
+                            <div class="insta_nick">
+                                <svg class="comment_insta">
+                                    <use xlink:href="./assets/sprite.svg#comment_insta" />
+                                </svg>
+                                <span class="insta_nick_text">olga_33</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card_main_text">Choosing this travel agency was the best decision I made for my vacation.
+                        The
+                        attention to detail in planning my cultural tour was exceptional. From historic landmarks to
+                        hidden gems, every moment was unforgettable. I can't wait to book my next adventure with them!
+                    </p>
+                    <button class="see_all" type="button">See All</button>
                 </div>
-                <div class="questions">
-                    <p class="question">How can I contact your customer support during my trip?
-                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
-                </p>
-                    <p class="question">Are your tours suitable for 
-                        solo travelers?
-                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
-                </p>
-                    <p class="question">What is your cancellation policy?
-                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
-                </p>
-                    <p class="question">Do you offer travel insurance options?
-                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
-                </p>
-                    <p class="question">Can I customize my travel itinerary 
-                        to suit my preferences?
-                    <button type="button" class="chevron"><i class="fa-solid fa-chevron-up"></i></button>
-                </p>
+
+                <div class="one_card">
+                    <div class="card_header_wrapper">
+                        <img class="user_photo" src="./img/guy_photo.webp">
+                        <div class="card_head_text_wrapper">
+                            <h6 class="comment_header">“Great cultural tour in Kyoto!”</h6>
+                            <div class="insta_nick">
+                                <svg class="comment_insta">
+                                    <use xlink:href="./assets/sprite.svg#comment_insta" />
+                                </svg>
+                                <span class="insta_nick_text">amir_ragrini</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card_main_text">The guides were passionate about sharing the history, and the local
+                        experiences were fantastic. The only improvement could be more flexibility in the schedule.
+                    </p>
+                    <button class="see_all" type="button">See All</button>
                 </div>
+
+                <div class="one_card">
+                    <div class="card_header_wrapper">
+                        <img class="user_photo" src="./img/girl_photo_2.webp">
+                        <div class="card_head_text_wrapper">
+                            <h6 class="comment_header">“Exceeded all expectations”</h6>
+                            <div class="insta_nick">
+                                <svg class="comment_insta">
+                                    <use xlink:href="./assets/sprite.svg#comment_insta" />
+                                </svg>
+                                <span class="insta_nick_text">ririji_fan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card_main_text">The adventure tour I booked through this agency exceeded all expectations.
+                        The thrill of the Amazon Rainforest was matched by the seamless organization of activities. The
+                        guides were knowledgeable, and the overall experience left me with memories I'll cherish
+                        forever.
+                    </p>
+                    <button class="see_all" type="button">See All</button>
+                </div>
+
+                <div class="one_card">
+                    <div class="card_header_wrapper">
+                        <img class="user_photo" src="./img/guy_photo_2.webp">
+                        <div class="card_head_text_wrapper">
+                            <h6 class="comment_header">“Super tour support!”</h6>
+                            <div class="insta_nick">
+                                <svg class="comment_insta">
+                                    <use xlink:href="./assets/sprite.svg#comment_insta" />
+                                </svg>
+                                <span class="insta_nick_text">tomas_shelbi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card_main_text">As a solo traveler, I felt completely at ease with the support of this
+                        agency. The cultural immersion tour I chose provided a perfect balance of group activities and
+                        personal exploration. The guides were friendly, and I made lifelong friends during the journey.
+                    </p>
+                    <button class="see_all" type="button">See All</button>
+                </div>
+
+                <div class="one_card">
+                    <div class="card_header_wrapper">
+                        <img class="user_photo" src="./img/girl_photo_3.webp">
+                        <div class="card_head_text_wrapper">
+                            <h6 class="comment_header">“Deal with details”</h6>
+                            <div class="insta_nick">
+                                <svg class="comment_insta">
+                                    <use xlink:href="./assets/sprite.svg#comment_insta" />
+                                </svg>
+                                <span class="insta_nick_text">rena_ta</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card_main_text">I opted for the Luxury Desert Retreat in Dubai, and it was pure opulence.
+                        From the moment I arrived, every detail was taken care of. The personalized service, exclusive
+                        accommodations, and breathtaking experiences made it a truly luxurious escape.
+                    </p>
+                    <button class="see_all" type="button">See All</button>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="form_section">
+            <div class="section_main_text_wrapper">
+                <h3 class="section_name">Fill Out the Form</h3>
+                <span class="section_little_text">Write a brief description of your needs and receive a detailed
+                    consultation from us.</span>
+            </div>
+            <div class="form_wrapper">
+                <form>
+                    <input class="form_input" type="text" id="name" name="name" placeholder="First name">
+                    <input class="form_input" type="tel" id="number" name="number"
+                        placeholder="+ 38 (_ _ _) _ _ _   _ _   _ _">
+                    <input class="form_input" type="email" id="email" name="email" placeholder="yourmail@gmail.com">
+                    <button class="form_button" type="button">Book Consultation</button>
+                </form>
+                <div class="contacts">
+                    <div class="contacts_header_wrapper">
+                        <p class="contacts_header">Contacts</p>
+                        <a href="#">
+                            <svg class="logo">
+                                <use xlink:href="./assets/sprite.svg#left-down_arrow" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="contacts_number">+380 99 261 22 39</p>
+                    <p class="contacts_email">travelly@gmail.com</p>
+                    <div class="contacts_main_wrapper">
+                        <p class="contacts_spot">м. Київ, Хрещатик, 1 /1</p>
+                        <div class="contact_sprite_wrapper">
+                            <a href="#">
+                                <svg class="logo">
+                                    <use xlink:href="./assets/sprite.svg#black_insta" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="logo">
+                                    <use xlink:href="./assets/sprite.svg#black_facebook" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-
+    <script src="./js/Jquery.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/6413ad4d2f.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
