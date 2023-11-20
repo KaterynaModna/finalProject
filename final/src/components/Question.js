@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'react-feather';
 
-export default function Question_3() {
+export default function Question() {
   const [displayText, setDisplayText] = useState('');
   const [isButtonActive, setIsButtonActive] = useState(false);
 
@@ -12,20 +12,20 @@ export default function Question_3() {
     } else {
       setIsButtonActive(true);
       setDisplayText(
-        `Absolutely! We offer personalized itineraries to tailor your trip according to your interests, so you can have the experience you desire.`
+        `Our 24/7 customer support hotline is available for any assistance or emergencies. You'll receive the contact details with your booking confirmation.`
       );
     }
   };
+ 
 
-return (
+  return (
     <button
       type="button"
       className={`answer_wrapper ${isButtonActive ? 'active' : ''}`}
       onClick={handleButtonClick}
     >
       <p className="question">
-      Can I customize my travel itinerary 
-to suit my preferences?
+        How can I contact your customer support during my trip?
         <span className={`chevron ${isButtonActive ? 'active' : ''}`}>
           {isButtonActive ? <ChevronUp /> : <ChevronDown />}
         </span>
