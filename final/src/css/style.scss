@@ -88,43 +88,32 @@ h1 {
 }
 
 .complex_input {
-    width: 80%;
-    max-width: 890px;
-    margin: 0 auto;
-    padding: 10px 16px;
-    position: relative;
-}
-
-
-
-.complex_input button {
+    width: 70%;
     display: flex;
+    flex-direction: row;
+    // flex-wrap: nowrap;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    background: rgba(255, 253, 253, 0.50);
+    margin: 0 auto 300px;
+    padding: 10px 16px 10px 40px;
+    border-radius: 50px;
+}
+.select_item{
+    background-color: transparent;
+    border: 1px solid #151515;
+}
+.complex_input button {
     padding: 20px 60px;
     background-color: #fff;
     border: none;
-    gap: 10px;
     border-radius: 30px;
     cursor: pointer;
 }
 
-.input_elements {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-wrap: wrap;
-    background: #fff;
-    border: 1px solid #ccc;
-    max-width: 830px;
-    justify-content: center;
-    align-items: center;
-    gap: 72px;
-    background: var(--White-500, rgba(255, 253, 253, 0.50));
-    margin: 0 auto;
-    padding: 10px 16px 10px 40px;
-    border-radius: 50px;
-}
+
 
 .grid {
   overflow: hidden;
@@ -272,7 +261,7 @@ a{
     font-size: 64px;
     font-weight: 400;
 }
-.section_little_text{
+.section_little_text, .answer{
     font-family: $inter;
     font-size: 20px;
     font-weight: 400;
@@ -289,6 +278,8 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.answer_wrapper{
     max-width: 800px;
     padding: 60px;
     border: 1px solid #151515;
@@ -424,4 +415,19 @@ form{
     margin-top: 220px;
     margin-bottom: 180px;
 }
-
+.grid_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px); 
+    transition: 1s;
+  }
+  
+  .grid_img:hover {
+    filter: blur(0);
+  }
+  
+  .attraction-name {
+    color: #000000;
+    font-size: 16px;
+  }

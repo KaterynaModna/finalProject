@@ -1,6 +1,9 @@
+
+
 <svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink"> 
 
 <!-- YOUTUBE -->
+
 <symbol id="youtube" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_30_171)">
 <rect x="4.5" y="0.5" width="43" height="43" rx="21.5" stroke="#FFFDFD" shape-rendering="crispEdges"/>

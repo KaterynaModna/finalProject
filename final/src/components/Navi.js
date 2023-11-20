@@ -1,29 +1,30 @@
+
 import svgSprite from '../assets/sprite.svg';
 export default function NaviHeader(){
     return(
-        <div class="navi_wrapper">
+        <div className="navi_wrapper">
         <div id="toggle">
-            <button class="indicator"></button>
+            <button className="indicator"></button>
         </div>
         <a href="#">
         <svg className="logo">
-            <use xlinkHref="{${svgSprite}#logo}" />
+        <use xlinkHref={`${svgSprite}#logo`} />
                   </svg>
         </a>
-        <div class="icon_wrapper">
+        <div className="icon_wrapper">
             <a href="#">
             <svg className="youtube">
-            <use xlinkHref="{${svgSprite}#youtube}" />
+            <use xlinkHref={`${svgSprite}#youtube`} />
                   </svg>
             </a>
             <a href="#">
             <svg className="icon">
-            <use xlinkHref="{${svgSprite}#inst}" />
+            <use xlinkHref={`${svgSprite}#inst`} />
                   </svg>
             </a>
             <a href="#">
             <svg className="icon">
-            <use xlinkHref="{${svgSprite}#tg}" />
+            <use xlinkHref={`${svgSprite}#tg`}/>
                   </svg>
             </a>
         </div>
