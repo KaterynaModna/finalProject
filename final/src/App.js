@@ -10,6 +10,7 @@ import Table_grid from './components/Table_grid';
 import Grida from './components/Grid';
 import FAQ from './components/faq';
 import Ccomments from './components/comments';
+import FormFooter from './components/FormFooter';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Table_grid />
       <FAQ />
       <Ccomments/>
+      <FormFooter/>
     </div>
   );
 }

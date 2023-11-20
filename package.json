@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "react-form-validator-core": "^1.1.2",
     "react-hook-form": "^7.48.2"
   }
 }
