@@ -1,3 +1,4 @@
+import svgSprite from '../assets/sprite.svg';
 export default function Card_5() {
     return(
         <div className="one_card">
@@ -7,7 +8,7 @@ export default function Card_5() {
                         <h6 className="comment_header">“Deal with details”</h6>
                         <div className="insta_nick">
                             <svg className="comment_insta">
-                                <use xlink:href="./assets/sprite.svg#comment_insta" />
+                            <use xlinkHref={`${svgSprite}#comment_insta`} />
                             </svg>
                             <span className="insta_nick_text">rena_ta</span>
                         </div>

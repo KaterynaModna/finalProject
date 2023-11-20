@@ -9,6 +9,7 @@ import Background from './components/Background';
 import Table_grid from './components/Table_grid';
 import Grida from './components/Grid';
 import FAQ from './components/faq';
+import Ccomments from './components/comments';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Grida />
       <Table_grid />
       <FAQ />
-      <Comments/>
+      <Ccomments/>
     </div>
   );
 }
